@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceRoot}",
+            "executable": "build/project.elf",
+            "name": "OpenOCD",
+            "device": "LPC4337_M4",
+            "configFiles": [
+                "${workspaceRoot}/boards/edu-ciaa-nxp/config/ciaa-nxp.cfg"
+            ],
+            // "svdFile": "${workspaceFolder}/scripts/openocd/LPC43xx_43Sxx.svd",
+        },
+        {
+            "type": "cortex-debug",
+            "request": "attach",
+            "servertype": "external",
+            "cwd": "${workspaceRoot}",
+            "executable": "build/project.elf",
+            "name": "Renode",
+            "gdbTarget": "localhost:3333",
+            // "svdFile": "${workspaceFolder}/scripts/openocd/LPC43xx_43Sxx.svd",
+        },
+
+    ],
+    "compounds": []
+}

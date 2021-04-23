@@ -1,0 +1,38 @@
+using "platforms/cpus/nxp_lpc4337.repl"
+
+tec1: Miscellaneous.Button @ gpio 4
+    invert: true
+    -> gpio@4
+
+tec2: Miscellaneous.Button @ gpio 8
+    invert: true
+    -> gpio@8
+
+tec3: Miscellaneous.Button @ gpio 9
+    invert: true
+    -> gpio@9
+
+tec4: Miscellaneous.Button @ gpio 41
+    invert: true
+    -> gpio@41
+
+ledr: Miscellaneous.LED @ gpio 160
+
+ledg: Miscellaneous.LED @ gpio 161
+
+ledb: Miscellaneous.LED @ gpio 162
+
+led1: Miscellaneous.LED @ gpio 14
+
+led2: Miscellaneous.LED @ gpio 43
+
+led3: Miscellaneous.LED @ gpio 44
+
+gpio:
+    160 -> ledr@0
+    161 -> ledg@0
+    162 -> ledb@0
+    14 -> led1@0
+    43 -> led2@0
+    44 -> led3@0
+

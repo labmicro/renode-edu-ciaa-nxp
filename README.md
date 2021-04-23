@@ -1,2 +1,7 @@
-# renode-edu-ciaa-nxp
-Archivos de configuracion y ejemplos de uso de la EDU-CIAA-NXP en el simulador Renode
+# Para correr un ejemplo en Renode
+
+Ingresar el siguiente comando en la consola de renode
+`path set @/Users/evolentini/Proyectos/facultad/renode-edu-ciaa-nxp/scripts/renode/`
+
+Ingresar el comnado
+` include @scripts/lab-micro.resc`
